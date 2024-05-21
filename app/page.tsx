@@ -139,9 +139,9 @@ export default function Page() {
         hey, I'm amerlinhung 👋
       </h1>
       <p className="prose prose-neutral dark:prose-invert">
-        {`I'm a frontend developer, optimist, and community builder. I currently `}
+        {`我是一名架构师, optimist, and community builder. 我现在`}
         <Link href="/work">work</Link>
-        {` as the VP of Product at `}
+        {` 作为解决方案的 `}
         <span className="not-prose">
           <Badge href="https://vercel.com/home">
             <svg
