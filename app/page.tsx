@@ -343,7 +343,8 @@ export default function Page() {
             <p className="ml-2 h-7">follow me</p>
           </a>
         </li>
-        <li>
+        {/* 删除follow me */}
+        {/* <li>
           <a
             className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
             rel="noopener noreferrer"
@@ -353,7 +354,7 @@ export default function Page() {
             <ArrowIcon />
             <p className="ml-2 h-7">get email updates</p>
           </a>
-        </li>
+        </li> */}
       </ul>
     </section>
   );
