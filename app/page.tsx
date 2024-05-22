@@ -246,10 +246,8 @@ export default function Page() {
       </div>
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          I create educational content for developers, teaching them about web
-          development, JavaScript and TypeScript, React and Next.js, and more.
-          This comes in all forms: blog posts, videos, tweets, conference talks,
-          and workshops. You can watch some of my favorites below.
+        我为开发人员创建教育内容，教授他们有关 Web 开发、JavaScript 和 TypeScript、React 和 Next.js 等的知识。
+        这有各种形式：博客文章、视频、推文、会议演讲和研讨会。您可以在下面观看我最喜欢的一些内容。
         </p>
       </div>
       <div className="my-8 flex w-full flex-col space-x-0 space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
@@ -266,10 +264,8 @@ export default function Page() {
       </div>
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          Over the past decade, I've written content on my blog and newsletter.
-          I try to keep things simple. You'll find writing about technologies
-          I'm interested in at the time, or how I'm learning and growing in my
-          career, sharing knowledge along the way.
+        在过去的十年里，我在博客和时事通讯上撰写了内容。我尽量让事情变得简单。您会发现有关我当时感兴趣的技术的文章，
+        或者我在职业生涯中如何学习和成长的文章，并在此过程中分享知识。
         </p>
       </div>
       <div className="my-8 flex w-full flex-col space-y-4">
