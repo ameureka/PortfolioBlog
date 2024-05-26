@@ -257,12 +257,14 @@ export default function Page() {
           name="@ameureka"
           link="https://www.youtube.com/@seealso1884"
         />
-        <ChannelLink
+        {/* 这里注释下第二个频道，暂时不要 */}
+        {/* <ChannelLink
           img={vercel}
           name="@vercel"
           link="https://www.youtube.com/@vercelhq"
-        />
+        /> */}
       </div>
+      {/* 这里是介绍 */}
       <div className="prose prose-neutral dark:prose-invert">
         <p>
         在过去的十年里，我在博客和时事通讯上撰写了内容。我尽量让事情变得简单。您会发现有关我当时感兴趣的技术的文章，
