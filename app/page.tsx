@@ -280,8 +280,9 @@ export default function Page() {
         <BlogLink name="The Story of Heroku" slug="heroku" />
       </div>
       <div className="prose prose-neutral dark:prose-invert">
+        {/* 这里的文字介绍 */}
         <p>
-        我向早期初创公司投资小额天使投资，为开发人员构建工具。
+        我通过开源工具(Vercel/GPT3.5/OpenAI/Next.js/Supbase/Stripe)构建公开的应用站点。
         </p>
       </div>
       <div className="my-8 flex h-14 w-full flex-row space-x-2 overflow-x-auto">
@@ -321,6 +322,7 @@ export default function Page() {
           </a>
         </div>
       </div>
+      {/* 这里的文字介绍 */}
       <div className="prose prose-neutral dark:prose-invert">
         <p>
           I've worked with and advised companies on{' '}

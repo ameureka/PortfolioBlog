@@ -88,6 +88,7 @@
         />
       </g>
     </symbol>
+    <!-- first icon -->
     <symbol
       id="linear"
       width="78"
@@ -111,6 +112,7 @@
         </clipPath>
       </defs>
     </symbol>
+
     <symbol
       id="react"
       width="15"
