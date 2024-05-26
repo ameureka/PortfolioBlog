@@ -250,11 +250,12 @@ export default function Page() {
         这有各种形式：博客文章、视频、推文、会议演讲和研讨会。您可以在下面观看我最喜欢的一些内容。
         </p>
       </div>
+      {/* 这里是youtube链接 */}
       <div className="my-8 flex w-full flex-col space-x-0 space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
         <ChannelLink
           img={avatar}
-          name="@leerob"
-          link="https://www.youtube.com/@leerob"
+          name="@ameureka"
+          link="https://www.youtube.com/@seealso1884"
         />
         <ChannelLink
           img={vercel}
