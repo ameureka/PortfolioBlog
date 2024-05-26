@@ -147,7 +147,8 @@ export default function Page() {
       I am `}
         <Link href="/work">employed</Link>
 
-        {` at Tencent Technology, `}
+        {` at  `}
+        <Link href="https://www.tencent.com">Tencent Technology</Link>
 
         {/* <span className="not-prose">
           <Badge href="https://vercel.com/home">
@@ -164,7 +165,7 @@ export default function Page() {
           </Badge>
         </span> */}
 
-        {`where I assist clients in constructing security solutions that meet their needs. `}
+        {`, where I assist clients in constructing security solutions that meet their needs. `}
 
         {/* <Badge href="https://nextjs.org">
           <img
@@ -260,8 +261,11 @@ export default function Page() {
       </div>
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-        我为开发人员创建教育内容，教授他们有关 Web 开发、JavaScript 和 TypeScript、React 和 Next.js 等的知识。
-        这有各种形式：博客文章、视频、推文、会议演讲和研讨会。您可以在下面观看我最喜欢的一些内容。
+        {/* 我为客户提供有关网络安全服务，教授他们的有关Web 开发安全，网络安全，数据安全等知识。这有各种形式：
+        博客文章、视频、推文、会议演讲和研讨会。 您可以在下面观看我最喜欢的一些内容。 */}
+        I provide clients with cybersecurity services, educating them about web development security, 
+        network security, data security, and more. This comes in various forms: blog posts, videos, tweets, 
+        conference talks, and workshops. You can view some of my favorite content below.
         </p>
       </div>
 
