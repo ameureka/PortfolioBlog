@@ -6,9 +6,9 @@ import { Navbar } from './components/nav';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { SandpackCSS } from './blog/[slug]/sandpack';
-
+// change the layout
 export const metadata: Metadata = {
-  metadataBase: new URL('https://leerob.io'),
+  metadataBase: new URL('https://portfolio.ameureka.com'),
   title: {
     default: 'Ameureka',
     template: '%s | Ameureka',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Ameurek',
     description: 'Developer, writer, and creator.',
-    url: 'https://leerob.io',
+    url: 'https://portfolio.ameureka.com',
     siteName: 'Ameurek',
     locale: 'en_US',
     type: 'website',
