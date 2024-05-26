@@ -250,6 +250,7 @@ export default function Page() {
         这有各种形式：博客文章、视频、推文、会议演讲和研讨会。您可以在下面观看我最喜欢的一些内容。
         </p>
       </div>
+
       {/* 这里是youtube链接 */}
       <div className="my-8 flex w-full flex-col space-x-0 space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
         <ChannelLink
@@ -264,13 +265,17 @@ export default function Page() {
           link="https://www.youtube.com/@vercelhq"
         /> */}
       </div>
+
       {/* 这里是介绍 */}
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-        在过去的十年里，我在博客和时事通讯上撰写了内容。我尽量让事情变得简单。您会发现有关我当时感兴趣的技术的文章，
-        或者我在职业生涯中如何学习和成长的文章，并在此过程中分享知识。
+        Over the last decade, I have consistently published articles on my blog and e-newsletter. 
+        I always strive to keep the content clear and straightforward. In these writings, I discuss the technological 
+        areas that pique my interest at the time, or I describe my learning and advancement on my career path, always 
+        happy to share the knowledge I've gained along the way.
         </p>
       </div>
+      {/* 这里是blog 内容 */}
       <div className="my-8 flex w-full flex-col space-y-4">
         <BlogLink
           name="What Makes A Great Developer Experience?"
@@ -279,6 +284,7 @@ export default function Page() {
         <BlogLink name="What is Developer Relations?" slug="devrel" />
         <BlogLink name="The Story of Heroku" slug="heroku" />
       </div>
+
       <div className="prose prose-neutral dark:prose-invert">
         {/* 这里的文字介绍 */}
         <p>
