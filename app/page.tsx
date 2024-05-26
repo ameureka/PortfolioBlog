@@ -138,6 +138,7 @@ export default function Page() {
       <h1 className="mb-8 text-2xl font-medium tracking-tighter">
         hey, I'm amerlinhung 👋
       </h1>
+      {/* 以下是个人介绍 */}
       <p className="prose prose-neutral dark:prose-invert">
         {`我是一名架构师, optimist, and community builder. 我现在`}
         <Link href="/work">work</Link>
@@ -182,6 +183,7 @@ export default function Page() {
         </Badge>
         .
       </p>
+      {/* 以上是个人介绍 */}
       <div className="grid grid-cols-2 grid-rows-4 sm:grid-rows-3 sm:grid-cols-3 gap-4 my-8">
         <div className="relative h-40">
           <Image
@@ -338,14 +340,14 @@ export default function Page() {
         </div>
       </div>
       {/* 这里的文字介绍删除*/}
-      <div className="prose prose-neutral dark:prose-invert">
+      {/* <div className="prose prose-neutral dark:prose-invert">
         <p>
           I've worked with and advised companies on{' '}
           <Link href="/blog/developer-marketing">developer marketing</Link>,{' '}
           <Link href="/blog/devrel">developer relations</Link>, building
           open-source communities, product-led growth, and more.
         </p>
-      </div>
+      </div> */}
 
       <ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
         <li>
