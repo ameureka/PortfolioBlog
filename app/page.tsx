@@ -140,10 +140,16 @@ export default function Page() {
       </h1>
       {/* 以下是个人介绍 */}
       <p className="prose prose-neutral dark:prose-invert">
-        {`我是一名架构师, optimist, and community builder. 我现在`}
-        <Link href="/work">work</Link>
-        {` 作为解决方案的 `}
-        <span className="not-prose">
+      {/* I am a cybersecurity architect, an optimist, and an explorer of AIGC (Artificial Intelligence Generated Content). Currently, 
+      I am employed at Tencent Technology, where I assist clients in constructing security solutions that meet their needs. 
+      Additionally, I am actively exploring the use of open-source artificial intelligence frameworks to solve practical problems. */}
+        {`I am a cybersecurity architect, an optimist, and an explorer of AIGC (Artificial Intelligence Generated Content).Currently, 
+      I am `}
+        <Link href="/work">employed</Link>
+
+        {` at Tencent Technology, `}
+
+        {/* <span className="not-prose">
           <Badge href="https://vercel.com/home">
             <svg
               width="13"
@@ -156,9 +162,11 @@ export default function Page() {
             </svg>
             Vercel
           </Badge>
-        </span>
-        {`, where I help teach the `}
-        <Badge href="https://nextjs.org">
+        </span> */}
+
+        {`where I assist clients in constructing security solutions that meet their needs. `}
+
+        {/* <Badge href="https://nextjs.org">
           <img
             alt="Next.js logomark"
             src="/next-logo.svg"
@@ -167,9 +175,11 @@ export default function Page() {
             height="14"
           />
           Next.js
-        </Badge>
-        {` community, an open-source web framework built with `}
-        <Badge href="https://react.dev">
+        </Badge> */}
+
+        {` Additionally, I am actively exploring the use of open-source artificial intelligence frameworks to solve practical problems`}
+
+        {/* <Badge href="https://react.dev">
           <svg
             width="14"
             height="14"
@@ -180,9 +190,11 @@ export default function Page() {
             <use href="/sprite.svg#react" />
           </svg>
           React
-        </Badge>
+        </Badge> */}
+
         .
       </p>
+
       {/* 以上是个人介绍 */}
       <div className="grid grid-cols-2 grid-rows-4 sm:grid-rows-3 sm:grid-cols-3 gap-4 my-8">
         <div className="relative h-40">
