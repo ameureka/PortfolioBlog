@@ -274,6 +274,8 @@ export default function Page() {
         areas that pique my interest at the time, or I describe my learning and advancement on my career path, always 
         happy to share the knowledge I've gained along the way.
         </p>
+        {/* 在过去十年中，我不断在我的博客和电子简报上发布文章。我总是尽量保持内容的简明易懂。在这些文章中，我会讨论那些我当时感兴趣的技术领域，
+        或者描述我在职业道路上的学习与进步，并且乐于沿途分享我的所学所得。 */}
       </div>
       {/* 这里是blog 内容 */}
       <div className="my-8 flex w-full flex-col space-y-4">
@@ -288,7 +290,8 @@ export default function Page() {
       <div className="prose prose-neutral dark:prose-invert">
         {/* 这里的文字介绍 */}
         <p>
-        我通过开源工具(Vercel/GPT3.5/OpenAI/Next.js/Supbase/Stripe)构建公开的应用站点。
+        {/* 我通过开源工具(Vercel/GPT3.5/OpenAI/Next.js/Supbase/Stripe)构建了一些公开的应用站点。 */}
+        I have built several public application sites using open-source tools such as Vercel, GPT-3.5, OpenAI, Next.js, Supabase, and Stripe.
         </p>
       </div>
       <div className="my-8 flex h-14 w-full flex-row space-x-2 overflow-x-auto">
@@ -328,15 +331,16 @@ export default function Page() {
           </a>
         </div>
       </div>
-      {/* 这里的文字介绍 */}
-      <div className="prose prose-neutral dark:prose-invert">
+      {/* 这里的文字介绍删除*/}
+      {/* <div className="prose prose-neutral dark:prose-invert">
         <p>
           I've worked with and advised companies on{' '}
           <Link href="/blog/developer-marketing">developer marketing</Link>,{' '}
           <Link href="/blog/devrel">developer relations</Link>, building
           open-source communities, product-led growth, and more.
         </p>
-      </div>
+      </div> */}
+
       <ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
         <li>
           <a
