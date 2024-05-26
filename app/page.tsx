@@ -291,7 +291,13 @@ export default function Page() {
         {/* 这里的文字介绍 */}
         <p>
         {/* 我通过开源工具(Vercel/GPT3.5/OpenAI/Next.js/Supbase/Stripe)构建了一些公开的应用站点。 */}
-        I have built several public application sites using open-source tools such as Vercel, GPT-3.5, OpenAI, Next.js, Supabase, and Stripe.
+        I have built several public application sites using open-source tools such as{' '}
+        <Link href="https://vercel.com">Vercel</Link>,{' '}
+        GPT-3.5, 
+        OpenAI, 
+        Next.js, 
+        Supabase, 
+        and Stripe.
         </p>
       </div>
       <div className="my-8 flex h-14 w-full flex-row space-x-2 overflow-x-auto">
@@ -332,14 +338,14 @@ export default function Page() {
         </div>
       </div>
       {/* 这里的文字介绍删除*/}
-      {/* <div className="prose prose-neutral dark:prose-invert">
+      <div className="prose prose-neutral dark:prose-invert">
         <p>
           I've worked with and advised companies on{' '}
           <Link href="/blog/developer-marketing">developer marketing</Link>,{' '}
           <Link href="/blog/devrel">developer relations</Link>, building
           open-source communities, product-led growth, and more.
         </p>
-      </div> */}
+      </div>
 
       <ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
         <li>
