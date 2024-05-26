@@ -293,11 +293,11 @@ export default function Page() {
         {/* 我通过开源工具(Vercel/GPT3.5/OpenAI/Next.js/Supbase/Stripe)构建了一些公开的应用站点。 */}
         I have built several public application sites using open-source tools such as{' '}
         <Link href="https://vercel.com">Vercel</Link>,{' '}
-        GPT-3.5, 
-        OpenAI, 
-        Next.js, 
-        Supabase, 
-        and Stripe.
+        <Link href="https://vercel.com">GPT-3.5</Link>,{' '}
+        <Link href="https://vercel.com">OpenAI</Link>,{' '}
+        <Link href="https://vercel.com">Next.js</Link>,{' '}
+        <Link href="https://vercel.com">Supabase</Link>,{' '}
+        and <Link href="https://vercel.com">Stripe.</Link>,{' '}
         </p>
       </div>
       <div className="my-8 flex h-14 w-full flex-row space-x-2 overflow-x-auto">
