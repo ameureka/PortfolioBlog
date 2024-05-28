@@ -197,6 +197,7 @@ export default function Page() {
       </p>
 
       {/* 以上是个人介绍 */}
+      {/* 照片*/}
       <div className="grid grid-cols-2 grid-rows-4 sm:grid-rows-3 sm:grid-cols-3 gap-4 my-8">
         <div className="relative h-40">
           <Image
@@ -208,6 +209,7 @@ export default function Page() {
             className="rounded-lg object-cover"
           />
         </div>
+
         <div className="relative sm:row-span-2 row-span-1">
           <Image
             alt="Me standing on stage at Reactathon delivering the keynote"
@@ -218,6 +220,7 @@ export default function Page() {
             className="rounded-lg object-cover object-top sm:object-center"
           />
         </div>
+
         <div className="relative">
           <Image
             alt="Me and Guillermo Rauch on stage for Vercel Ship, answering questions from the Next.js community"
@@ -228,6 +231,7 @@ export default function Page() {
             className="rounded-lg object-cover"
           />
         </div>
+
         <div className="relative row-span-2">
           <Image
             alt="Me, Lydia, and Delba filming the Next.js Conf keynote"
@@ -238,6 +242,7 @@ export default function Page() {
             className="rounded-lg object-cover sm:object-center"
           />
         </div>
+
         <div className="relative row-span-2">
           <Image
             alt="My badge on top of a pile of badges from a Vercel meetup we held"
@@ -248,6 +253,7 @@ export default function Page() {
             className="rounded-lg object-cover"
           />
         </div>
+
         <div className="relative h-40">
           <Image
             alt="Me standing on stage at SmashingConf giving a talk about my optimism for the web"
@@ -258,6 +264,7 @@ export default function Page() {
             className="rounded-lg object-cover"
           />
         </div>
+        
       </div>
       <div className="prose prose-neutral dark:prose-invert">
         <p>
