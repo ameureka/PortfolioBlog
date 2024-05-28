@@ -86,7 +86,7 @@ function ChannelLink({ img, link, name }) {
     </div>
   );
 }
-
+// youtube订阅获取接口信息
 async function Subs({ name }: { name: string }) {
   noStore();
   let subscribers;
@@ -192,7 +192,6 @@ export default function Page() {
           </svg>
           React
         </Badge> */}
-
         .
       </p>
 
@@ -318,11 +317,11 @@ export default function Page() {
         {/* 我通过开源工具(Vercel/GPT3.5/OpenAI/Next.js/Supbase/Stripe)构建了一些公开的应用站点。 */}
         I have built several public application sites using open-source tools such as{' '}
         <Link href="https://vercel.com">Vercel</Link>,{' '}
-        <Link href="https://vercel.com">GPT-3.5</Link>,{' '}
-        <Link href="https://vercel.com">OpenAI</Link>,{' '}
-        <Link href="https://vercel.com">Next.js</Link>,{' '}
-        <Link href="https://vercel.com">Supabase</Link>,{' '}
-        and <Link href="https://vercel.com">Stripe.</Link>,{' '}
+        <Link href="https://platform.openai.com/docs/models">GPT-3.5</Link>,{' '}
+        <Link href="https://openai.com">OpenAI</Link>,{' '}
+        <Link href="https://nextjs.org">Next.js</Link>,{' '}
+        <Link href="https://supabase.com">Supabase</Link>,{' '}
+        and <Link href="https://stripe.com">Stripe.</Link>,{' '}
         </p>
       </div>
       <div className="my-8 flex h-14 w-full flex-row space-x-2 overflow-x-auto">
