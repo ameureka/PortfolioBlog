@@ -335,9 +335,9 @@ export default function Page() {
         </div>
         {/* 项目工程1 */}
         <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
-          <a href="https://supabase.com">
+          <a href="https://aicode.ameureka.com">
             <svg width="100" height="19" role="img" aria-label="Supabase logo">
-              <use href="/sprite.svg#supabase" />
+              <use href="/sprite.svg#aicode" />
             </svg>
           </a>
         </div>
