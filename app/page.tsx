@@ -325,6 +325,7 @@ export default function Page() {
         </p>
       </div>
       <div className="my-8 flex h-14 w-full flex-row space-x-2 overflow-x-auto">
+        {/* 项目工程1 */}
         <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
           <a href="https://linear.app">
             <svg width="78" height="20" role="img" aria-label="Linear logo">
@@ -332,6 +333,7 @@ export default function Page() {
             </svg>
           </a>
         </div>
+        {/* 项目工程1 */}
         <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
           <a href="https://supabase.com">
             <svg width="100" height="19" role="img" aria-label="Supabase logo">
@@ -339,6 +341,7 @@ export default function Page() {
             </svg>
           </a>
         </div>
+        {/* 项目工程1 */}
         <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
           <a href="https://www.makeswift.com/blog/makeswift-is-joining-bigcommerce">
             <svg width="96" height="19" role="img" aria-label="Makeswift logo">
@@ -346,6 +349,7 @@ export default function Page() {
             </svg>
           </a>
         </div>
+        {/* 项目工程1 */}
         <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
           <a href="https://resend.com">
             <svg width="70" height="17" role="img" aria-label="Resend logo">
@@ -353,6 +357,7 @@ export default function Page() {
             </svg>
           </a>
         </div>
+
         <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
           <a href="https://bun.sh">
             <svg width="35" height="27" role="img" aria-label="Bun logo">
@@ -360,6 +365,7 @@ export default function Page() {
             </svg>
           </a>
         </div>
+
       </div>
       {/* 这里的文字介绍删除*/}
       {/* <div className="prose prose-neutral dark:prose-invert">
