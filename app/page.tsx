@@ -301,15 +301,17 @@ export default function Page() {
         {/* 在过去十年中，我不断在我的博客和电子简报上发布文章。我总是尽量保持内容的简明易懂。在这些文章中，我会讨论那些我当时感兴趣的技术领域，
         或者描述我在职业道路上的学习与进步，并且乐于沿途分享我的所学所得。 */}
       </div>
+
       {/* 这里是blog 内容 */}
       <div className="my-8 flex w-full flex-col space-y-4">
         <BlogLink
-          name="What Makes A Great Developer Experience?"
-          slug="developer-experience"
+          name="《商君书》中的“驭民五术"
+          slug="Shangjun"
         />
-        <BlogLink name="What is Developer Relations?" slug="devrel" />
-        <BlogLink name="The Story of Heroku" slug="heroku" />
+        <BlogLink name="思维转变的多重思考" slug="changeminds" />
+        <BlogLink name="王川的笔记001" slug="chuanwang001" />
       </div>
+
 
       <div className="prose prose-neutral dark:prose-invert">
         {/* 这里的文字介绍 */}
