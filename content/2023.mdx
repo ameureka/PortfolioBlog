@@ -1,271 +1,104 @@
 ---
-title: '2023 Blog Refresh'
-publishedAt: '2023-11-19'
-summary: 'Including some of my latest hot takes (okay they are pretty mild).'
+title: '2023总结与2024年展望'
+publishedAt: '2024-01-19'
+summary: '关于2023年生活的一些感悟与总结内容.'
 ---
 
-I updated my blog this weekend and wanted to share some thoughts along the way:
+## 题记：
 
-- [Content Management](#content-management)
-- [Performance](#performance)
-- [Opinions](#opinions)
+10年之后当我在看到的这篇文章的，我将要是什么的样的感想，所以我一直在想这个事情。
 
-<Callout emoji="⚠️">
 
-**Disclaimer:** My site is my “breakable toy”. I enjoy and _intentionally_ change technology and try new patterns here. I'd encourage you to do the same and then write about why you made those choices.
+### 2023年的过电影
 
-</Callout>
+过去的2023年是一个充满变化的一年，发生嘞太多的事情的，现在萦绕在我的脑海之中一些词语的出现“疫情”、“人民”、“搬家”、“深圳”、“工作”、“年轻人”……
 
-## Content Management
+这些词语可能是涉及到的 我自己，也许是涉及到整个国家。很多时候我的总是感觉我个人的文字是那么的苍苍与无力，不能将我自己的生活的准确的记录下来，生活之中总是充斥着“忙碌”，但是回过头来，以第一点的小事情其实对我们的人生是有比较大的帮助。
 
-I've moved my content from HTML to vanilla Markdown, to MDX, to a CMS, and back to MDX over the years. My content requirements as of now are:
+2023年过去了，虽然是过的很激荡，但是还是要记录一下。
 
-1. Written in Markdown¹
-2. Support for syntax highlighting, embedded tweets, and other components
-3. Managed through version control²
-4. Minimal external dependencies
+第一疫情，我们的后疫情时代，我们的看法，大家的对其中幻想以及抱怨；
 
-My goal was to simplify without giving up too many features.
+第二动荡的边缘世界，俄乌战争，以色列战争…..
 
-### Retrieving Content
+第三个人的关于新房的，以及在这其中发生的关于贷款的故事
 
-You can go surprisingly far with just Node.js and JavaScript. You'll notice a theme start to emerge in this blog post: fewer dependencies, and more copy/paste-able code.
+第四个人漂泊的半年，来到深圳，以及出差上海周边自己的故事
 
-I removed the following libraries:
+第五关于行业的大的调整变化，如何裁员，跟历史感觉是一样的
 
-- `contentlayer`
-- `next-contentlayer`
-- `rehype-autolink-headings`
-- `rehype-pretty-code`
-- `rehype-slug`
-- `remark-gfm`
-- `shiki`
+第六年前人是怎么想象的
 
-I was still able to maintain almost all of my content requirements with not much code. For example, here's how I'm able to retrieve all of my blog posts:
 
-```js
-import fs from 'fs';
-import path from 'path';
+### 想要问自己的几个问题：
 
-function getMDXFiles(dir) {
-  return fs.readdirSync(dir).filter((file) => path.extname(file) === '.mdx');
-}
 
-function readMDXFile(filePath) {
-  let rawContent = fs.readFileSync(filePath, 'utf-8');
-  return parseFrontmatter(rawContent);
-}
+我总是还需要对自己想要问几个的问题的，
 
-function getMDXData(dir) {
-  let mdxFiles = getMDXFiles(dir);
-  return mdxFiles.map((file) => {
-    let { metadata, content } = readMDXFile(path.join(dir, file));
-    let slug = path.basename(file, path.extname(file));
-    return {
-      metadata,
-      slug,
-      content,
-    };
-  });
-}
+我今年过的怎么样？在历史大的洪流下，年轻人该怎么做选择
 
-export function getBlogPosts() {
-  return getMDXData(path.join(process.cwd(), 'content'));
-}
-```
+我做的检讨是什么 ，有没有什么的大的变化，是不是要锻炼身体，我的思考的是什么
 
-That's not too bad. So what am I missing? Well, Contentlayer gives you Fast Refresh for your content. That's nice. You can [workaround this](https://github.com/gaearon/overreacted.io/pull/797) or just use `@next/mdx`, which I might do. Contentlayer has other features, too, but they're unnecessary for my blog.
+未来10年我要做什么，过去的十年我做的是什么？我的大的方向是不是需要改变了
 
-### Remark and Rehype
+我对我自己的了解到底深不深，我知道的我自己是一个什么样的人吗？自己之前是不是思考过这个事情，我们的想法意义。
 
-What about the AST modifications for auto-linking headings, adding IDs, and supporting syntax highlighting? I don't know why I didn't think of this before, but you can just… use React components.
+其实很多的时候的我要想的事情是什么，就是要有一定的计划，做自己计划内的事情才是最关键，因为你现在活在这个世界上，精力是有限的。所以没有这样的精力，你怎么肯梦做事情。
 
-```jsx
-import { highlight } from 'sugar-high'; // 1KB new dependency
 
-// This replaces rehype-pretty-code and shiki
-function Code({ children, ...props }) {
-  let codeHTML = highlight(children);
-  return <code dangerouslySetInnerHTML={{ __html: codeHTML }} {...props} />;
-}
+### 2024年要做的几个小事情
 
-// This replaces rehype-slug
-function slugify(str) {
-  return str
-    .toString()
-    .toLowerCase()
-    .trim() // Remove whitespace from both ends of a string
-    .replace(/\s+/g, '-') // Replace spaces with -
-    .replace(/&/g, '-and-') // Replace & with 'and'
-    .replace(/[^\w\-]+/g, '') // Remove all non-word characters except for -
-    .replace(/\-\-+/g, '-'); // Replace multiple - with single -
-}
 
-// This replaces rehype-autolink-headings
-function createHeading(level) {
-  return ({ children }) => {
-    let slug = slugify(children);
-    return React.createElement(
-      `h${level}`,
-      { id: slug },
-      [
-        React.createElement('a', {
-          href: `#${slug}`,
-          key: `link-${slug}`,
-          className: 'anchor',
-        }),
-      ],
-      children
-    );
-  };
-}
-```
+所以在2024年有几点小的事情需要做，第一创建一个自己的第一个AI 应用….
 
-Oh and that `remark-gfm` I was using for the GitHub style Markdown tables? Again, you can use a React component for that.
+我自己的优势是什么，这一点的可以减少掉多少的人员；
 
-```jsx
-function Table({ data }) {
-  let headers = data.headers.map((header, index) => (
-    <th key={index}>{header}</th>
-  ));
-  let rows = data.rows.map((row, index) => (
-    <tr key={index}>
-      {row.map((cell, cellIndex) => (
-        <td key={cellIndex}>{cell}</td>
-      ))}
-    </tr>
-  ));
+坚持锻炼自己的身体的，需要跑步多少的，这一点的也是自己需要思考的变化的；
 
-  return (
-    <table>
-      <thead>
-        <tr>{headers}</tr>
-      </thead>
-      <tbody>{rows}</tbody>
-    </table>
-  );
-}
-```
+未来思路是什么，
 
-### Dependency Minimalism
+未来6个月我需要做的事情是什么。。。。。
 
-Why go through all of this work to delete dependencies?
+未来3个月我需要做的事情是什么。。。。。。
 
-After having a blog for 10 years, I've gained a new appreciation for keeping things simple. Now, I'm not going _full_ minimalist here. I still want nice things. But I'm taking more opportunities to simplify and keep more code managed in the repo.
+未来1个月我需要做的事情是什么。。。。。。
 
-Shoutout to [next-mdx-remote](https://github.com/hashicorp/next-mdx-remote) and [react-tweet](https://react-tweet.vercel.app/).
 
-## Performance
+### 目标是什么
 
-Earlier this year, I moved this blog to the [Next.js App Router](https://nextjs.org/docs/app). That came with a subtle but important change: [React Server Components](https://nextjs.org/docs/app/building-your-application/rendering/server-components) by default.
 
-### Server Components
+我的主要的目标是什么……
 
-Server Components are fun. For example, I can embed tweets inside blog posts:
+本周的我要实现的主要的目标是什么，需要做什么样的事情……
 
-```jsx
-<Tweet id="1457032789883187201" />
-```
+很多时候，需要不断地的重新的想关于人际关系的相关的问题，如何处理
 
-The `Tweet` component handles both data fetching _and_ creating UI, all bundled up in a handy npm package (worth an exception here). Notably, additional Server Components added to my pages aren't increasing the client-side JavaScript bundle. This “templating” remains server-only.
+所以说我其实不知道，自己的主要的思路是什么，其中主要的思路就是的“时间与人生”，或者说的时间维度的思路是是什么，在生活之中肯定有很多的“噪音”，这些噪音已经很久了，这样的来看的话。
 
-Another example is on [my work page](https://leerob.io/work). I love that I can drop this component in anywhere:
+所以对自己来说就是现在要看的的对时间的影响的事情现在有多少，这个是很关键的事情。没有这个东西肯定是不行。
 
-```jsx
-async function Stars() {
-  let res = await fetch('https://api.github.com/repos/vercel/next.js');
-  let json = await res.json();
-  let count = Math.round(json.stargazers_count / 1000);
-  return `${count}k stars`;
-}
-```
 
-### Partial Prerendering
+### 最后
 
-We're also working on something new in Next.js I'm now using here. It enables Next.js to prerender as much of the page as possible to static, leaving holes for dynamic components.
 
-For example, 98% of this blog post page is work that can be prerendering during the build. However, those view counts at the top of the page should be dynamic on every request. With [Partial Prerendering](https://www.partialprerendering.com/), the code for that looks like:
+所以在我的年终的总结之中，还是有一些需要补充的就是的，完善我们的知识结构。这个信息能提升你的能力吗？不能！能完善你的知识结构吗？不能，所以当一件事情过来的时候，看这些知识是不是可以完善我们的知识结构。
 
-```tsx
-async function Views({ slug }: { slug: string }) {
-  let views = await getViewsCount();
-  incrementViews(slug);
-  // ...
-}
+玩意儿还是【稀缺资源】，很容易被其它因素消耗掉；并且一旦耗尽，【无法】立即恢复（需要一定的时间才慢慢恢复）。
 
-export default function Blog({ params }) {
-  let post = getBlogPosts().find((post) => post.slug === params.slug);
-  // ...
+如何执行一个事情，在一个事情具体的执行的过程的之中的，是有很多变通的思路的，只有这些变通的思路次可以做到该做到的事情。
 
-  return (
-    <section>
-      <Suspense fallback={<p className="h-5" />}>
-        <Views slug={post.slug} />
-      </Suspense>
-      <article>{post.content}</article>
-    </section>
-  );
-}
-```
+换句话说，你就获得了巨大的【个人竞争优势】。换句话说，你自己就是最大的优势。因为你发现了这个问题吗，所以你觉得你自己就是最大的优势。
 
-Everything up to the `Suspense` boundary, including the `fallback`, can be prerendered. Then, when the request happens, the static shell is instantly shown, followed by the dynamic content (views) streaming in after the fact.
+其实就是包装的自己，把自己之前的做的事情的好好的处理的，主要是通过社交媒体，创建一个好的个人的品牌，这样的品牌的就是的“一个人，就是一个独立的主体，数字超级体”，AI 才可以让我们的成就的这一点，目前来说是对的，我们碰到了一个好的时代。不是吗？
 
-`getViewsCount` signals to Next.js that it's dynamic through `noStore()`:
+路在哪里，有很多时候的不需要知道的，我们也不知道的，返账就是一句话，干起来在说。
 
-```jsx
-export async function getViewsCount() {
-  noStore();
-  let data = await sql`
-    SELECT slug, count
-    FROM views
-  `;
+因为你知道的别人的说的道路都是别人已经走过的，别人走的路一定是拥挤的，所以要走就走自己的走的路。
 
-  return data.rows as { slug: string; count: number }[];
-}
-```
+为什么要去做的事情是难得事情，因为难得事情对我们的来说的才会有门槛，换句话所呢，就是有一定的护城河的，可以保护我们一段时间去做这个事情。所以你说应该是对的。
 
-And `incrementViews` is a Server Action that can be called like any JavaScript function:
-
-```jsx
-'use server';
-
-import { sql } from '@vercel/postgres';
-
-export async function increment(slug: string) {
-  await sql`
-    INSERT INTO views (slug, count)
-    VALUES (${slug}, 1)
-    ON CONFLICT (slug)
-    DO UPDATE SET count = views.count + 1
-  `;
-}
-```
-
-I'm really happy with this approach. In the past, I had to include more dependencies like `swr` and add additional client-side JavaScript to achieve this. Partial Prerendering feels fast, without giving up the dynamic view counts that I love.
-
-<StaticTweet id="1723494155220054489" />
-
-## Opinions
-
-There's an assortment of other opinions I've included here now:
-
-- **Prefer `let` over `const`:** It's fewer characters to write. I'm lazy. Also, this isn't a production codebase here or anything. [Nice post here](https://overreacted.io/on-let-vs-const/) on this topic.
-- **Prefer copy/paste over the wrong abstraction:** I removed `date-fns`, `clsx` / `classnames`, and `gray-matter` for simple copy-pastable alternatives. Sure, they don't support every single feature. But, I don't need it. And if I do later, maybe I'll bring it back.
-- **Prefer loading SVGs as images:** Okay, this one has been hard for me. I've gotten so used to inlining SVGs in React. But starting to change my mind. [Related reading here](https://kurtextrem.de/posts/svg-in-js) and [on svg sprites](https://benadam.me/thoughts/react-svg-sprites/).
-- **Prefer larger files versus many components:** Just works for my brain better. Keep code that changes often close together. Your mileage may vary.
-- **Prefer colocating most things in `app/`:** Because, _why not_? Now that it's possible with the App Router I'm probably overusing this, but it feels nice.
-- **Prefer colocating styles with components:** Okay, I've been using Tailwind now for many years, but this is still worth mentioning. Similar to my content evolution, I went from CSS → Sass → styled-components → Chakra → Tailwind. [Give it a shot](https://adamwathan.me/css-utility-classes-and-separation-of-concerns). P.S. LLMs are very good at Tailwind.
-
-## Conclusion
-
-As always, my entire site is [open source](https://github.com/leerob/leerob.io). Feel free to fork it and hack around.
-
-I've also simplified the cloning process by consolidating everything to a single [Postgres database](https://vercel.com/storage/postgres). It's now where blog views, guestbook entries, and redirects are stored. I still like MySQL, just wanted an excuse to use Vercel Postgres more.
 
 See you next year for the 2024 blog refresh 🫡
 
 ---
 
-¹: Even when I moved to a CMS, I was still writing in MDX. For my developer blog, it's by far the easiest for me to maintain. I've gone the opposite route with custom components backed by a CMS on larger projects, but has always felt unnecessary here.
-
-²: Surprisingly, there still aren't many great git-like workflows for content that I've enjoyed using. Again, for my blog, having the complete version history tracked in git has been very helpful.
