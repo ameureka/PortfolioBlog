@@ -1,5 +1,21 @@
 import Link from 'next/link';
 
+// const navItems = {
+//   '/': {
+//     name: 'home',
+//   },
+//   '/work': {
+//     name: 'work',
+//   },
+//   '/blog': {
+//     name: 'blog',
+//   },
+//   '/guestbook': {
+//     name: 'guestbook',
+//   },
+// };
+
+// 添加portfilio 标签
 const navItems = {
   '/': {
     name: 'home',
@@ -10,10 +26,15 @@ const navItems = {
   '/blog': {
     name: 'blog',
   },
+  '/portfolio': {
+    name: 'portfolio',
+  },
   '/guestbook': {
     name: 'guestbook',
   },
 };
+
+
 
 export function Navbar() {
   return (
