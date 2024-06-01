@@ -18,25 +18,43 @@ export default function WorkPage() {
     <section>
       <h1 className="font-medium text-2xl mb-8 tracking-tighter">my work</h1>
       <div className="prose prose-neutral dark:prose-invert">
-        <p>
+
+        {/* <p>
           On a mission to build products developers{' '}
           <Link href="/blog/developer-experience">love</Link>, and along the
           way, teach the next generation of developers. Here's a summary of my
           work so far.
-        </p>
-        <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
-        <h2 className="font-medium text-xl mb-1 tracking-tighter">Vercel</h2>
-        <p className="text-neutral-600 dark:text-neutral-400 text-sm">
-          VP of Product
-        </p>
+        </p> */}
+
         <p>
+        I have always been dedicated to in-depth exploration and practice in the field of cybersecurity. 
+        At the same time, I focus on the research and application of cutting-edge market technologies.
+        </p>
+
+
+        <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
+        <h2 className="font-medium text-xl mb-1 tracking-tighter">Tencent Technologies Co., Ltd.</h2>
+        <p className="text-neutral-600 dark:text-neutral-400 text-sm">
+            Senior Zero Trust Product Architect
+        </p>
+
+        {/* <p>
           I joined <a href="https://vercel.com/home">Vercel</a> early to grow{' '}
           <a href="https://nextjs.org">Next.js</a> and our developer community.
           I built our Developer Relations team to teach our community about our
           products.
+        </p> */}
+
+        <p>
+        Tencent is one of China's leading technology companies, offering a diverse range 
+        of services and products including social platforms, digital content, online 
+        advertising, financial technology, and corporate services.
         </p>
+
         <ul>
-          <li>
+
+
+          {/* <li>
             In 2021, I was promoted to Director of DevRel. We{' '}
             <a href="https://twitter.com/kelseyhightower/status/1105985400110112768">
               translated customer pain
@@ -45,34 +63,40 @@ export default function WorkPage() {
             <Link href="/blog/nextjs-conf-2022-recap">conferences</Link>, wrote
             blog posts, and created videos. We built open-source examples and
             contributed back to the product.
-          </li>
+          </li> */}
+
           <li>
-            In 2022, I was promoted to VP of Developer Experience, now also
-            leading our product documentation team. My team created a{' '}
-            <a href="https://nextjs.org/learn">new free course</a> to teach
-            Next.js, which had 17 million page views that year.{' '}
-            <a href="https://twitter.com/leeerob/status/1608900031859527682">
-              I shipped.
-            </a>{' '}
-            I partnered with our open-source community, collaborating with
-            frameworks like{' '}
-            <a href="https://vercel.com/docs/frameworks/nuxt">Nuxt</a> and{' '}
-            <a href="https://astro.build/blog/vercel-official-hosting-partner/">
-              Astro
-            </a>{' '}
-            and sponsoring individuals and projects.
+          In 2021, I focused primarily on marketing, collaborating closely with other departments 
+          such as product management, development, and sales to ensure our product's success among customers.
           </li>
+
           <li>
-            In 2023, I was promoted to VP of Product, now also leading Product
-            Management.
+          In 2022, I was part of a large health code project design. The XX Health Code project was designed to 
+          satisfy the needs of 60 million users, achieving high concurrency on a fully privatized high-concurrency 
+          architecture platform. The client wanted to ensure the system ran efficiently, securely, and stably. 
+          I joined the project team to participate in the overall system security planning, implementation, 
+          and project management. Based on the concept of "shifting security left," we planned and executed 
+          in areas such as network security, data security, and privacy compliance.
           </li>
+
+
+          <li>
+          In 2023, as a Senior Solutions Architect, I was involved in the design of a significant data customs project.
+           The XXX Data Hub project was aimed at providing Chinese enterprises with a secure data channel to ensure 
+           compliance with data privacy regulations for outbound data. I joined the project team as the lead architect, 
+           overseeing everything from business logic organization to product solution integration, to the actual design
+            and construction. The project received high recognition from clients.
+          </li>
+
+
         </ul>
-        <p>
+        {/* <p>
           Since I joined Vercel in 2020, Next.js active developers have grown
           1000%, now at ~900k. Next.js is now a top 10 software project on
           GitHub with <Stars />. It's used by Walmart, ChatGPT, Starbucks, Okta,
           Datastax, Notion, and <a href="https://nextjs.org/showcase">more</a>.
-        </p>
+        </p> */}
+        
         <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
         <h2 className="font-medium text-xl mb-1 tracking-tighter">Hy-Vee</h2>
         <p className="text-neutral-600 dark:text-neutral-400 text-sm">
