@@ -89,6 +89,16 @@ export default function WorkPage() {
           </li>
 
 
+          <li>
+          In 2024, as a Senior Zero Trust Product Architect, I designed and implemented zero trust security architectures,
+           responsible for creating a network security framework for clients based on the principles of zero trust to ensure 
+           the safety of enterprise data and applications. I led the refinement of the IOA SaaS product planning on the client
+            side of multinational corporations, aligning with business strategies and meeting market demands. The solutions 
+            were employed by companies such as Trina Solar, GCL Technology, and East Hope Group, and received wide recognition
+            in emerging industries such as photovoltaics, new energy, and energy storage.
+          </li>
+
+
         </ul>
         {/* <p>
           Since I joined Vercel in 2020, Next.js active developers have grown
@@ -98,32 +108,41 @@ export default function WorkPage() {
         </p> */}
         
         <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
-        <h2 className="font-medium text-xl mb-1 tracking-tighter">Hy-Vee</h2>
+        <h2 className="font-medium text-xl mb-1 tracking-tighter">Sangfor Technologies Co., Ltd.</h2>
         <p className="text-neutral-600 dark:text-neutral-400 text-sm">
-          Senior Software Engineer, 2018 — 2020
+          Cybersecurity Solutions Expert  2016-2021
         </p>
+
         <p>
-          Hy-Vee, an almost 100-year-old grocery chain in the United States,
-          wanted to build a new version of their digital storefront. I joined a
-          team of <Link href="/blog/product-engineers">product engineers</Link>{' '}
-          working across web and mobile to rebuild their legacy .NET application
-          (~500k MAU) with React and React Native.
+        Sangfor, headquartered in Shenzhen, China, is a high-tech enterprise specializing in the research 
+        and development and services of cloud computing, network security, and network optimization technologies.
+         It has now grown into one of the leaders in network security, cloud computing, and fundamental IT infrastructure in Asia.
         </p>
-        <p>
-          On the frontend, I led our move from a custom webpack and React
-          configuration to Next.js and the latest React patterns. In the
-          process, I shared my learnings online, helping educate members of the
-          React and Next.js community by creating courses.
-        </p>
-        <p>
-          Throughout my two years, I was able to work on some hard problems:
-          decoupling a decade old monolith into microservices, working with a
-          federated GraphQL API, learning and occasionally managing a Kubernetes
-          cluster, building and implementing a design system, incrementally
-          migrating individual components and routes to a new framework and
-          infrastructure, and more.
-        </p>
-        <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
+
+        <li>
+        I took the initiative to be responsible for demand operations, by conducting in-depth analysis of market and user data 
+        to identify potential needs and developing strategies to meet those demands. In terms of channel management, I established 
+        and maintained a robust distribution network, optimized the supply chain, and ensured the effective delivery of products. 
+        Additionally, I possess unique insights into marketing efforts, successfully executing multiple promotional campaigns and 
+        advertising initiatives, thereby strengthening the brand's market presence.
+          </li>
+
+
+          <li>
+          I also provided regular customer consultation services to help them solve various technical problems encountered during 
+          the use of products. Furthermore, I actively led the team to develop a series of solutions to meet the specific needs 
+          of different customers, which enhanced customer satisfaction and improved the market competitiveness of our products.
+          </li>
+
+
+          <li>
+          I have had the privilege of collaborating with clients across various industry sectors, including government agencies, 
+          financial firms, educational institutions, and several large corporations. These experiences have not only broadened 
+          my industry perspective but also honed my communication and problem-solving skills, enabling me to provide high-quality 
+          service and support to customers in high-pressure and fast-paced environments.
+          </li>
+
+        {/* <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
         <h2 className="font-medium text-xl mb-1 tracking-tighter">Workiva</h2>
         <p className="text-neutral-600 dark:text-neutral-400 text-sm">
           Software Engineer, 2015 — 2018
@@ -134,7 +153,7 @@ export default function WorkPage() {
           using React. I worked on tooling to help predict and alert and
           regressions in our SaaS platform, building a product similar to
           open-source tools like Sentry.
-        </p>
+        </p> */}
       </div>
     </section>
   );
