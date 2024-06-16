@@ -384,11 +384,6 @@ export default function Page() {
         {/* 我通过开源工具(Vercel/GPT3.5/OpenAI/Next.js/Supbase/Stripe)构建了一些公开的应用站点。 */}
         I built several public applications using open source tools like {' '}
         <Link href="https://vercel.com">Vercel</Link>,{' '}
-        <Link href="https://platform.openai.com/docs/models">GPT-3.5</Link>,{' '}
-        <Link href="https://openai.com">OpenAI</Link>,{' '}
-        <Link href="https://nextjs.org">Next.js</Link>,{' '}
-        <Link href="https://supabase.com">Supabase</Link>,{' '}
-        and <Link href="https://stripe.com">Stripe.</Link>,{' '}
         </p>
       </div>
 
@@ -401,47 +396,6 @@ export default function Page() {
             </svg>
           </a>
         </div>
-
-        {/* 项目工程 ai code */}
-
-        <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
-          <a href="https://aicode.ameureka.com">
-            <svg width="100" height="19" role="img" aria-label="Supabase logo">
-              <use href="/sprite.svg#aicode" />
-            </svg>
-          </a>
-        </div>
-
-        {/* 项目工程1 */}
-
-        {/* <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
-          <a href="https://www.makeswift.com/blog/makeswift-is-joining-bigcommerce">
-            <svg width="96" height="19" role="img" aria-label="Makeswift logo">
-              <use href="/sprite.svg#makeswift" />
-            </svg>
-          </a>
-        </div> */}
-
-        {/* 项目工程1 */}
-
-        {/* <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
-          <a href="https://resend.com">
-            <svg width="70" height="17" role="img" aria-label="Resend logo">
-              <use href="/sprite.svg#resend" />
-            </svg>
-          </a>
-        </div> */}
-
-
-        {/* <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
-          <a href="https://bun.sh">
-            <svg width="35" height="27" role="img" aria-label="Bun logo">
-              <use href="/sprite.svg#bun" />
-            </svg>
-          </a>
-        </div> */}
-
-
       </div>
 
 
