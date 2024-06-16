@@ -325,9 +325,9 @@ export default function Page() {
         and <Link href="https://stripe.com">Stripe.</Link>,{' '}
         </p>
       </div>
+
       <div className="my-8 flex h-14 w-full flex-row space-x-2 overflow-x-auto">
         {/* 项目工程 ai twitter bio */}
-
         <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
           <a href="https://aitwitterbio.ameureka.com">
             <svg width="78" height="20" role="img" aria-label="Linear logo">
@@ -377,6 +377,74 @@ export default function Page() {
 
 
       </div>
+
+      <div className="prose prose-neutral dark:prose-invert">
+        {/* 这里的文字介绍 */}
+        <p>
+        {/* 我通过开源工具(Vercel/GPT3.5/OpenAI/Next.js/Supbase/Stripe)构建了一些公开的应用站点。 */}
+        I built several public applications using open source tools like {' '}
+        <Link href="https://vercel.com">Vercel</Link>,{' '}
+        <Link href="https://platform.openai.com/docs/models">GPT-3.5</Link>,{' '}
+        <Link href="https://openai.com">OpenAI</Link>,{' '}
+        <Link href="https://nextjs.org">Next.js</Link>,{' '}
+        <Link href="https://supabase.com">Supabase</Link>,{' '}
+        and <Link href="https://stripe.com">Stripe.</Link>,{' '}
+        </p>
+      </div>
+
+      <div className="my-8 flex h-14 w-full flex-row space-x-2 overflow-x-auto">
+        {/* 项目工程 ai twitter bio */}
+        <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
+          <a href="https://aitwitterbio.ameureka.com">
+            <svg width="78" height="20" role="img" aria-label="Linear logo">
+              <use href="/sprite.svg#twitterbio" />
+            </svg>
+          </a>
+        </div>
+
+        {/* 项目工程 ai code */}
+
+        <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
+          <a href="https://aicode.ameureka.com">
+            <svg width="100" height="19" role="img" aria-label="Supabase logo">
+              <use href="/sprite.svg#aicode" />
+            </svg>
+          </a>
+        </div>
+
+        {/* 项目工程1 */}
+
+        {/* <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
+          <a href="https://www.makeswift.com/blog/makeswift-is-joining-bigcommerce">
+            <svg width="96" height="19" role="img" aria-label="Makeswift logo">
+              <use href="/sprite.svg#makeswift" />
+            </svg>
+          </a>
+        </div> */}
+
+        {/* 项目工程1 */}
+
+        {/* <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
+          <a href="https://resend.com">
+            <svg width="70" height="17" role="img" aria-label="Resend logo">
+              <use href="/sprite.svg#resend" />
+            </svg>
+          </a>
+        </div> */}
+
+
+        {/* <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
+          <a href="https://bun.sh">
+            <svg width="35" height="27" role="img" aria-label="Bun logo">
+              <use href="/sprite.svg#bun" />
+            </svg>
+          </a>
+        </div> */}
+
+
+      </div>
+
+
       {/* 这里的文字介绍删除*/}
       {/* <div className="prose prose-neutral dark:prose-invert">
         <p>
@@ -386,6 +454,7 @@ export default function Page() {
           open-source communities, product-led growth, and more.
         </p>
       </div> */}
+
 
       <ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
         <li>
