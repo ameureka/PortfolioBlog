@@ -27,8 +27,8 @@ export default function WorkPage() {
         </p> */}
 
         <p>
-        I have always been dedicated to in-depth exploration and practice in the field of cybersecurity. 
-        At the same time, I focus on the research and application of cutting-edge market technologies.
+        I have consistently demonstrated a strong commitment to in-depth exploration and practice in the field of cybersecurity. 
+        At the same time, I concentrate on the research and implementation of the latest market technologies.
         </p>
 
 
@@ -66,36 +66,35 @@ export default function WorkPage() {
           </li> */}
 
           <li>
-          In 2021, I focused primarily on marketing, collaborating closely with other departments 
-          such as product management, development, and sales to ensure our product's success among customers.
+          In 2021, I focused on marketing, collaborating closely with other departments, 
+          including product management, development, and sales, to ensure the success of our product with customers.
           </li>
 
           <li>
-          In 2022, I was part of a large health code project design. The XX Health Code project was designed to 
-          satisfy the needs of 60 million users, achieving high concurrency on a fully privatized high-concurrency 
-          architecture platform. The client wanted to ensure the system ran efficiently, securely, and stably. 
-          I joined the project team to participate in the overall system security planning, implementation, 
-          and project management. Based on the concept of "shifting security left," we planned and executed 
-          in areas such as network security, data security, and privacy compliance.
-          </li>
-
-
-          <li>
-          In 2023, as a Senior Solutions Architect, I was involved in the design of a significant data customs project.
-           The XXX Data Hub project was aimed at providing Chinese enterprises with a secure data channel to ensure 
-           compliance with data privacy regulations for outbound data. I joined the project team as the lead architect, 
-           overseeing everything from business logic organization to product solution integration, to the actual design
-            and construction. The project received high recognition from clients.
+          In 2022, I was part of a large health code project design team. The XX Health Code project was designed to meet 
+          the needs of 60 million users, achieving high concurrency on a fully privatized high-concurrency architecture platform.
+          The client required that the system run efficiently, securely, and stably. I was invited to join the project team to 
+          contribute to the overall system security planning, implementation, and project management. In line with the concept 
+          of "shifting security left," we developed and implemented plans for network security, data security, and privacy compliance.
           </li>
 
 
           <li>
-          In 2024, as a Senior Zero Trust Product Architect, I designed and implemented zero trust security architectures,
-           responsible for creating a network security framework for clients based on the principles of zero trust to ensure 
-           the safety of enterprise data and applications. I led the refinement of the IOA SaaS product planning on the client
-            side of multinational corporations, aligning with business strategies and meeting market demands. The solutions 
-            were employed by companies such as Trina Solar, GCL Technology, and East Hope Group, and received wide recognition
-            in emerging industries such as photovoltaics, new energy, and energy storage.
+          In 2023, as a Senior Solutions Architect, I was involved in the design of a major data customs project. 
+          The Data Hub project was designed to provide a secure data channel for Chinese companies to ensure that outbound data 
+          was compliant with data privacy regulations. I was appointed as the lead architect of the project team and was responsible 
+          for overseeing all aspects of the project, including business logic design, product solution integration, and on-the-ground 
+          implementation. The customer was highly satisfied with the project.
+          </li>
+
+
+          <li>
+          In 2024, as a Senior Zero Trust Product Architect, I was responsible for designing and implementing Zero Trust Security 
+          Architecture market efforts. My responsibilities included building cybersecurity facilities for clients based on zero-trust 
+          principles with the goal of securing corporate data and applications. I led the integration of IOA SaaS product landing 
+          solutions suitable for multinational companies' overseas business, aligning with business strategy and meeting market needs. 
+          These solutions have been successfully implemented by Trina Solar, GCL Technology, and Risen Energy, and have gained recognition 
+          in emerging industries such as photovoltaics, new energy, and energy storage.
           </li>
 
 
@@ -120,26 +119,26 @@ export default function WorkPage() {
         </p>
 
         <li>
-        I took the initiative to be responsible for demand operations, by conducting in-depth analysis of market and user data 
-        to identify potential needs and developing strategies to meet those demands. In terms of channel management, I established 
-        and maintained a robust distribution network, optimized the supply chain, and ensured the effective delivery of products. 
-        Additionally, I possess unique insights into marketing efforts, successfully executing multiple promotional campaigns and 
-        advertising initiatives, thereby strengthening the brand's market presence.
+        I assumed responsibility for demand operations by conducting in-depth analysis of market and user data to identify potential 
+        needs and developing strategies to meet those demands. In terms of channel management, I established and maintained a robust 
+        distribution network, optimized the supply chain, and ensured the effective delivery of products. Furthermore, I have a deep
+         understanding of marketing strategies, having successfully implemented numerous promotional campaigns and advertising initiatives, 
+         which have enhanced the brand's market presence.
           </li>
 
 
           <li>
-          I also provided regular customer consultation services to help them solve various technical problems encountered during 
-          the use of products. Furthermore, I actively led the team to develop a series of solutions to meet the specific needs 
-          of different customers, which enhanced customer satisfaction and improved the market competitiveness of our products.
+          In addition, I provided regular customer consultation services to assist them in resolving various technical issues encountered 
+          during the use of our products. Furthermore, I spearheaded the development of a range of solutions tailored to the specific needs 
+          of our diverse customer base, enhancing customer satisfaction and boosting the market competitiveness of our products.
           </li>
 
 
           <li>
-          I have had the privilege of collaborating with clients across various industry sectors, including government agencies, 
-          financial firms, educational institutions, and several large corporations. These experiences have not only broadened 
-          my industry perspective but also honed my communication and problem-solving skills, enabling me to provide high-quality 
-          service and support to customers in high-pressure and fast-paced environments.
+          I have had the privilege of collaborating with clients across various industry sectors, including government agencies, financial firms,
+           educational institutions, and several large corporations. These experiences have not only broadened my industry perspective but also 
+           enhanced my communication and problem-solving skills, enabling me to provide high-quality service and support to customers in high-pressure 
+           and fast-paced environments.
           </li>
 
         {/* <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
