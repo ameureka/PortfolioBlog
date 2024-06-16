@@ -268,9 +268,9 @@ export default function Page() {
         <p>
         {/* 我为客户提供有关网络安全服务，教授他们的有关Web 开发安全，网络安全，数据安全等知识。这有各种形式：
         博客文章、视频、推文、会议演讲和研讨会。 您可以在下面观看我最喜欢的一些内容。 */}
-        I provide clients with cybersecurity services, educating them about web development security, 
-        network security, data security, and more. This comes in various forms: blog posts, videos, tweets, 
-        conference talks, and workshops. You can view some of my favorite content below.
+        I provide cybersecurity services to customers, educating them about web development security, 
+        network security, data security, and more. This comes in a variety of forms: blog posts, videos, 
+        tweets, conference talks, and workshops. Some of my favorite content can be found below.
         </p>
       </div>
 
@@ -292,10 +292,10 @@ export default function Page() {
       {/* 这里是介绍 */}
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-        Over the last decade, I have consistently published articles on my blog and e-newsletter. 
-        I always strive to keep the content clear and straightforward. In these writings, I discuss the technological 
-        areas that pique my interest at the time, or I describe my learning and advancement on my career path, always 
-        happy to share the knowledge I've gained along the way.
+        Over the past decade, I have consistently published articles on my blog and in my e-newsletter. 
+        I always try to keep the content clear and concise. In these writings, I discuss the areas of 
+        technology that are of interest to me at the time, or I describe my learning and progress along 
+        my career path, always happy to share the knowledge I've gained along the way.
         </p>
         {/* 在过去十年中，我不断在我的博客和电子简报上发布文章。我总是尽量保持内容的简明易懂。在这些文章中，我会讨论那些我当时感兴趣的技术领域，
         或者描述我在职业道路上的学习与进步，并且乐于沿途分享我的所学所得。 */}
@@ -316,7 +316,7 @@ export default function Page() {
         {/* 这里的文字介绍 */}
         <p>
         {/* 我通过开源工具(Vercel/GPT3.5/OpenAI/Next.js/Supbase/Stripe)构建了一些公开的应用站点。 */}
-        I have built several public application sites using open-source tools such as{' '}
+        I built several public applications using open source tools like {' '}
         <Link href="https://vercel.com">Vercel</Link>,{' '}
         <Link href="https://platform.openai.com/docs/models">GPT-3.5</Link>,{' '}
         <Link href="https://openai.com">OpenAI</Link>,{' '}
