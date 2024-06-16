@@ -143,11 +143,10 @@ export default function Page() {
       {/* I am a cybersecurity architect, an optimist, and an explorer of AIGC (Artificial Intelligence Generated Content). Currently, 
       I am employed at Tencent Technology, where I assist clients in constructing security solutions that meet their needs. 
       Additionally, I am actively exploring the use of open-source artificial intelligence frameworks to solve practical problems. */}
-        {`I am a cybersecurity architect, an optimist, and an explorer of AIGC (Artificial Intelligence Generated Content).Currently, 
-      I am `}
+        {`I am a cybersecurity architect, an optimist, and an explorer of AIGC (Artificial Intelligence Generated Content),currently`}
         <Link href="/work">employed</Link>
 
-        {` at  `}
+        {` by  `}
         <Link href="https://www.tencent.com">Tencent Technology</Link>
 
         {/* <span className="not-prose">
@@ -165,7 +164,7 @@ export default function Page() {
           </Badge>
         </span> */}
 
-        {`, where I assist clients in constructing security solutions that meet their needs. `}
+        {` where I help customers build security solutions that meet their needs.  `}
 
         {/* <Badge href="https://nextjs.org">
           <img
@@ -178,7 +177,7 @@ export default function Page() {
           Next.js
         </Badge> */}
 
-        {` Additionally, I am actively exploring the use of open-source artificial intelligence frameworks to solve practical problems`}
+        {` In addition, I am actively exploring the use of open source artificial intelligence frameworks to solve practical problems.`}
 
         {/* <Badge href="https://react.dev">
           <svg
