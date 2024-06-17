@@ -301,15 +301,17 @@ export default function Page() {
         或者描述我在职业道路上的学习与进步，并且乐于沿途分享我的所学所得。 */}
       </div>
 
-      {/* 这里是blog 内容 */}
+      {/* 这里是blog 内容精选部分，可以随时调整 */}
       <div className="my-8 flex w-full flex-col space-y-4">
         <BlogLink
-          name="《商君书》中的“驭民五术"
-          slug="Shangjun"
+          name="AI新范式必将出现"
+          slug="futureaigc"
         />
         <BlogLink name="思维转变的多重思考" slug="changeminds" />
-        <BlogLink name="王川的笔记001" slug="chuanwang001" />
+        <BlogLink name="Portfolio个人博客开发实践" slug="todoportfilio" />
       </div>
+
+
 
 
       <div className="prose prose-neutral dark:prose-invert">
