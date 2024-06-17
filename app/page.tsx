@@ -393,7 +393,7 @@ export default function Page() {
         <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
           <a href="https://aigcbook.ameureka.com">
             <svg width="125" height="20" role="img" aria-label="Linear logo">
-              <use href="/sprite.svg#twitterbio" />
+              <use href="/sprite.svg#aigc" />
             </svg>
           </a>
         </div>
