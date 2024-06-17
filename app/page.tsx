@@ -383,7 +383,7 @@ export default function Page() {
         <p>
         {/* 我通过开源工具(Vercel/GPT3.5/OpenAI/Next.js/Supbase/Stripe)构建了一些公开的应用站点。 */}
         Here's the ebook I created via  {' '}
-        <Link href="https://www.gitbook.com">gitbook</Link>,{' '}
+        <Link href="https://www.gitbook.com">Gitbook</Link>{' '}
         </p>
       </div>
 
