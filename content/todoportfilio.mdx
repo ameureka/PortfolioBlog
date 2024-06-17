@@ -1,0 +1,153 @@
+---
+title: 'portfolio个人博客开发'
+publishedAt: '2024-01-19'
+summary: '这里主要介绍了个人博客开发实践全部过程，带领你的学习开发简洁博客站点'
+---
+
+# 导读：
+
+个人博客的开发，通过这篇博文，你将会学习到使用目前全球先进的全栈框架V ercel进行的个人博客的搭建的，使用Next.js 语言进行的站点修改，并且使用Cloudflare 云服务进行
+
+开放给用户进行全球的加速访问。
+
+## [portfolio.ameureka.com](https://portfolio.ameureka.com/)
+
+# **001-项目框架**
+
+该项目的使用的整体框架
+
+* **Framework**: [Next.js](https://nextjs.org/)
+* **Database**: [Postgres](https://vercel.com/postgres)
+* **Authentication**: [NextAuth.js](https://next-auth.js.org/)
+* **Deployment**: [Vercel](https://vercel.com/)
+* **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+* **Analytics**: [Vercel Analytics](https://vercel.com/analytics)
+
+### Running Locally 项目本地搭建使用的脚本
+
+This application requires Node.js v18.17+.
+
+```txt
+git clone <https://github.com/leerob/leerob.io.git>
+cd leerob.io
+bun install
+bun run setup # Remove all of my personal information
+bun dev
+Create a .env.local file similar to .env.example.
+```
+
+—正如上面看到的脚本，其中bun run setup 这里是处理脚本的文件的，需要处理下的脚本的方便进行部署。
+
+1. `git clone <https://github.com/leerob/leerob.io.git`> 这个命令会克隆（即复制）一个名为 `leerob.io` 的Git仓库到你的本地计算机。这个仓库位于GitHub上，由URL指定。
+2. `cd leerob.io` 这个命令会改变当前的工作目录到刚刚克隆的 `leerob.io` 文件夹中。
+3. `bun install` 这个命令会使用 `bun` 包管理器来安装项目所需的依赖。`bun` 是一个类似于 `npm` 或 `yarn` 的JavaScript工具，用于处理项目依赖。
+4. `bun run setup` 这个命令会执行 `package.json` 文件中定义的 `setup` 脚本。根据你之前提供的注释，这个脚本的目的是移除所有的个人信息。具体它会做什么取决于脚本的内容。
+5. `bun dev` 这个命令会启动一个开发服务器，通常用于本地开发和测试。这样你就可以在本地浏览器中预览和测试项目。
+
+从框架之中我们知道的我么是需要postgre的，首先我们需要创建需要的postgre 账号
+
+![](https://picdata.ameureka.com/makeportfilio%2FUntitled.png)
+
+可以直接修改配置文件，说明。
+
+![](https://picdata.ameureka.com/makeportfilio%2FUntitled%201.png)
+
+需要创建数据库，使用脚本进行创建，这一点很关键很多用户可能会忽略数据库的创建。这里直接使用的数据库创建脚本进行创建。
+
+![](https://picdata.ameureka.com/makeportfilio%2FUntitled%204.png)
+
+主要原因是这里使用的代码引用了数据库之中的库表，我们可以从程序之中看到的在配置文件以及主文件之中使用了数据库，这里数据库主要的作用是存储我们再bloger 站点下，用户访问文章的阅读次数。
+
+![](https://picdata.ameureka.com/makeportfilio%2FUntitled%205.png)
+
+![](https://picdata.ameureka.com/makeportfilio%2FUntitled%206.png)
+
+# **002-github 与vercel 部署**
+
+在使用github 与Vercel 进行部署的时候我们需要注意以下几个问题：
+
+* 项目的启动一般来讲的文件是哪个？
+* 如何修改配置文件修改启动项目？
+* 如何解析项目的脚本，满足自己的适配的要求？
+* 框架文件对vercel部署的影响？
+
+![](https://picdata.ameureka.com/makeportfilio%2FUntitled%207.png)
+
+我们可以看到的在文件之中有 .env 文件实际上的有配置的，所以在vercel 第一次启动的时候是需要填写先关的参数。
+
+![](https://picdata.ameureka.com/makeportfilio%2FUntitled%208.png)
+
+![](https://picdata.ameureka.com/makeportfilio%2FUntitled%209.png)
+
+![](https://picdata.ameureka.com/makeportfilio%2FUntitled%2010.png)
+
+从整体的部署的过程之中的可以看到使用都是package.json的文件之中的脚本
+
+![](https://picdata.ameureka.com/makeportfilio%2FUntitled%2011.png)
+
+部署之后我们看到的就是的删除了所有的私有的内容。
+
+![](https://picdata.ameureka.com/makeportfilio%2FUntitled%2012.png)
+
+我们可以看到已经删除了之前的demo 里面的所有的内容的，然后接下来我们修改核心的部分的自定义。
+
+# **003-自定义修改与部署**
+
+如果你不想执行 `setup` 脚本来移除个人信息，你可以简单地从 `package.json` 文件中移除或修改任何引用到 `setup` 脚本的地方。在你提供的 `package.json` 文件中，`setup` 脚本被引用在 `"build"` 脚本中。你可以按照以下步骤修改配置：
+
+1. 打开 `package.json` 文件。
+2. 找到 `"scripts"` 部分。
+3. 修改 `"build"` 脚本，移除对 `setup` 脚本的引用。原来的 `"build": "npm run setup && next build"` 应该改为 `"build": "next build"`。
+
+修改后的 `scripts` 部分应该看起来像这样：
+
+"scripts": { "dev": "next dev --turbo", "build": "next build", "build-only": "next build", "start": "next start", "setup": "node ./setup.mjs" },
+
+经过部署之后发现目前部署正常。
+
+![](https://picdata.ameureka.com/makeportfilio%2FUntitled%2013.png)
+
+但是在实际的运行过程之中的出现了错误
+
+![](https://picdata.ameureka.com/makeportfilio%2FUntitled%2014.png)
+
+接下里使用chatGPT进行的错误的处理，我们可以将以上的报错信息的在GPT 4 之中询问的，当然我们可以很快找到答案。
+
+如果这之前没有创建并修改数据库的话会出现这种情况（因为我们已经提前创建了数据库，所以这里没有问题）
+
+![](https://picdata.ameureka.com/makeportfilio%2FUntitled%2015.png)
+
+接下来，构建过程中出现了错误：
+
+```txt
+PostgresError: relation "redirects" does not exist
+```
+
+这个错误是由PostgreSQL数据库抛出的，意味着在数据库中找不到名为 "redirects" 的表或视图。错误代码 `42P01` 是PostgreSQL的SQLSTATE代码，表示 "未定义的表"。
+
+错误的堆栈跟踪指向了 `next.config.mjs` 文件的第22行，这表明在该文件中有一段代码试图访问 "redirects" 表，但是这个表在数据库中不存在。
+
+为了解决这个问题，你需要检查以下几点：
+
+1. 确保你的数据库中确实存在一个名为 "redirects" 的表。如果表不存在，你需要创建它。
+2. 如果你的应用程序是在不同的环境（开发、测试、生产）之间迁移，确保所有环境的数据库结构是一致的。
+3. 检查数据库连接配置是否正确，确保应用程序连接到了正确的数据库。
+4. 如果 "redirects" 表是通过迁移脚本创建的，确保在部署之前已经运行了相应的迁移。
+
+最后，你可能需要查看 `next.config.mjs` 文件的第22行，以及任何相关的数据库访问代码，以确保它们正确地处理了 "redirects" 表。如果需要，你可以在本地环境中重现这个错误，并进行调试。
+
+# **004-内容修改**
+
+[https://github.dev/ameureka/PortfolioBlog/blob/main/next.config.mjs](https://github.dev/ameureka/PortfolioBlog/blob/main/next.config.mjs)
+
+直接的使用在线进行编辑处理总结，并且可以在线提交之后可以进行直接更新处理。我们修改的内容有很多包含首页的照片的，博客内容，个人介绍等等，除此之外对于站点的一些站点地图，搜索引擎的优化等配置也要进行修改的，这里可以依据你自己的情况进行修改处理的即可。
+
+# **005-自定义个性化域名**
+
+接下里我们使用的Cloudflare 进行域名的解析，在Vercel 的之中的Setting 配置下的进行自定义域名设置。
+
+![](https://picdata.ameureka.com/makeportfilio%2FUntitled%2016.png)
+
+最终一个拥有简洁风格的个人的站点搭建完成，这个工程因为使用开源框架，且采用Vercel 的全栈架构的，可以直接使用的Vercel 进行站点的托管的，不需要你花费任何的服务资源的，完全免费，并且配合Github可以在线进行的代码更新，及时更新渲染，非常方便。
+
+[https://portfolio.ameureka.com/](https://portfolio.ameureka.com/)
