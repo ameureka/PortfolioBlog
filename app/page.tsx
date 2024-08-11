@@ -400,10 +400,10 @@ export default function Page() {
           </a>
         </div>
 
-        {/* 电子书链接001 人人都会用AIGC */}
+        {/* 电子书链接002  Generative AI */}
         <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
-          <a href="https://aigcbook.ameureka.com">
-            <svg width="125" height="20" role="img" aria-label="Linear logo">
+          <a href="https://genaibook.ameureka.com/">
+            <svg width="132" height="20" role="img" aria-label="Linear logo">
               <use href="/sprite.svg#aigc" />
             </svg>
           </a>
