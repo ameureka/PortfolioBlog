@@ -141,6 +141,42 @@ export default function WorkPage() {
            and fast-paced environments.
           </li>
 
+
+        <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
+        <h2 className="font-medium text-xl mb-1 tracking-tighter">Sangfor Technologies Co., Ltd.</h2>
+        <p className="text-neutral-600 dark:text-neutral-400 text-sm">
+          Cybersecurity Solutions Expert  2016-2021
+        </p>
+
+        <p>
+        Sangfor, headquartered in Shenzhen, China, is a high-tech enterprise specializing in the research 
+        and development and services of cloud computing, network security, and network optimization technologies.
+         It has now grown into one of the leaders in network security, cloud computing, and fundamental IT infrastructure in Asia.
+        </p>
+
+        <li>
+        I assumed responsibility for demand operations by conducting in-depth analysis of market and user data to identify potential 
+        needs and developing strategies to meet those demands. In terms of channel management, I established and maintained a robust 
+        distribution network, optimized the supply chain, and ensured the effective delivery of products. Furthermore, I have a deep
+         understanding of marketing strategies, having successfully implemented numerous promotional campaigns and advertising initiatives, 
+         which have enhanced the brand's market presence.
+        </li>
+
+
+          <li>
+          In addition, I provided regular customer consultation services to assist them in resolving various technical issues encountered 
+          during the use of our products. Furthermore, I spearheaded the development of a range of solutions tailored to the specific needs 
+          of our diverse customer base, enhancing customer satisfaction and boosting the market competitiveness of our products.
+          </li>
+
+
+          <li>
+          I have had the privilege of collaborating with clients across various industry sectors, including government agencies, financial firms,
+           educational institutions, and several large corporations. These experiences have not only broadened my industry perspective but also 
+           enhanced my communication and problem-solving skills, enabling me to provide high-quality service and support to customers in high-pressure 
+           and fast-paced environments.
+          </li>
+
       </div>
     </section>
   );
