@@ -156,6 +156,12 @@ export default function WorkPage() {
 
         <img src="https://picdata.ameureka.com/projectpreview/soloar_project.png" alt="Project Image" className="my-6" />
 
+        <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
+        <img src="https://picdata.ameureka.com/projectpreview/health%20code.png" alt="Project Image" className="my-6" />
+
+        <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
+        <img src="https://picdata.ameureka.com/projectpreview/data_hub.png" alt="Project Image" className="my-6" />
+
       </div>
     </section>
   );
