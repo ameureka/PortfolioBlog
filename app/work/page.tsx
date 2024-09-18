@@ -154,13 +154,7 @@ export default function WorkPage() {
         engine for customers' digital transformation and global business expansion.
         </p>
 
-        <li>
-        I assumed responsibility for demand operations by conducting in-depth analysis of market and user data to identify potential 
-        needs and developing strategies to meet those demands. In terms of channel management, I established and maintained a robust 
-        distribution network, optimized the supply chain, and ensured the effective delivery of products. Furthermore, I have a deep
-         understanding of marketing strategies, having successfully implemented numerous promotional campaigns and advertising initiatives, 
-         which have enhanced the brand's market presence.
-        </li>
+        <img src="https://picdata.ameureka.com/projectpreview/soloar_project.png" alt="Project Image" className="my-6" />
 
       </div>
     </section>
