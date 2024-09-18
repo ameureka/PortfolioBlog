@@ -141,18 +141,6 @@ export default function WorkPage() {
            and fast-paced environments.
           </li>
 
-        {/* <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
-        <h2 className="font-medium text-xl mb-1 tracking-tighter">Workiva</h2>
-        <p className="text-neutral-600 dark:text-neutral-400 text-sm">
-          Software Engineer, 2015 — 2018
-        </p>
-        <p>
-          Workiva ($WK) is a cloud platform for data reporting and compliance.
-          During my time at Workiva, I gained my first production experience
-          using React. I worked on tooling to help predict and alert and
-          regressions in our SaaS platform, building a product similar to
-          open-source tools like Sentry.
-        </p> */}
       </div>
     </section>
   );
