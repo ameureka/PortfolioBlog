@@ -143,15 +143,15 @@ export default function WorkPage() {
 
 
         <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
-        <h2 className="font-medium text-xl mb-1 tracking-tighter">Sangfor Technologies Co., Ltd.</h2>
+        <h2 className="font-medium text-xl mb-1 tracking-tighter">Project Introduction.</h2>
         <p className="text-neutral-600 dark:text-neutral-400 text-sm">
-          Cybersecurity Solutions Expert  2016-2021
+        Some Projects About Cloud Computing and Network Security
         </p>
 
         <p>
-        Sangfor, headquartered in Shenzhen, China, is a high-tech enterprise specializing in the research 
-        and development and services of cloud computing, network security, and network optimization technologies.
-         It has now grown into one of the leaders in network security, cloud computing, and fundamental IT infrastructure in Asia.
+        Provide services to multinational enterprises by building an infrastructure that meets global business requirements. 
+        Develop high-availability and high-concurrency business systems to support customer business growth, and provide the 
+        engine for customers' digital transformation and global business expansion.
         </p>
 
         <li>
@@ -161,21 +161,6 @@ export default function WorkPage() {
          understanding of marketing strategies, having successfully implemented numerous promotional campaigns and advertising initiatives, 
          which have enhanced the brand's market presence.
         </li>
-
-
-          <li>
-          In addition, I provided regular customer consultation services to assist them in resolving various technical issues encountered 
-          during the use of our products. Furthermore, I spearheaded the development of a range of solutions tailored to the specific needs 
-          of our diverse customer base, enhancing customer satisfaction and boosting the market competitiveness of our products.
-          </li>
-
-
-          <li>
-          I have had the privilege of collaborating with clients across various industry sectors, including government agencies, financial firms,
-           educational institutions, and several large corporations. These experiences have not only broadened my industry perspective but also 
-           enhanced my communication and problem-solving skills, enabling me to provide high-quality service and support to customers in high-pressure 
-           and fast-paced environments.
-          </li>
 
       </div>
     </section>
