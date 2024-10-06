@@ -21,15 +21,15 @@ const navItems: { [key: string]: NavItem } = {
   '/blog': {
     name: 'blog',
   },
-  '/portfolio': {
-    name: 'portfolio',
-    external: true,
-    url: 'https://portfoliopage.ameureka.com',
-  },
   '/photocast': {
     name: 'photocast',
     external: true,
     url: 'https://photoblog.ameureka.com',
+  },
+  '/portfolio': {
+    name: 'portfolio',
+    external: true,
+    url: 'https://portfoliopage.ameureka.com',
   },
   '/guestbook': {
     name: 'guestbook',
