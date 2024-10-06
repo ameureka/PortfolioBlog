@@ -26,10 +26,17 @@ const navItems: { [key: string]: NavItem } = {
     external: true,
     url: 'https://portfoliopage.ameureka.com',
   },
+  '/photocast': {
+    name: 'photocast',
+    external: true,
+    url: 'https://photoblog.ameureka.com',
+  },
   '/guestbook': {
     name: 'guestbook',
   },
 };
+
+
 
 export function Navbar() {
   return (
