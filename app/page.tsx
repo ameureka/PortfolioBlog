@@ -135,14 +135,6 @@ async function Views({ slug }: { slug: string }) {
 
 export default function Page() {
   {/* 以下添加视频播放的自定义的内容 */}
-  const [error, setError] = useState<string | null>(null)
-  const videoRef = useRef<HTMLVideoElement>(null)
-  const handleVideoError = () => {
-    if (videoRef.current) {
-      setError(`Video error: ${videoRef.current.error?.message}`)
-    }
-  }
-
   return (
     <section>
       <PreloadResources />
@@ -455,23 +447,6 @@ export default function Page() {
             Your browser does not support the video tag.
           </video>
         </div>
-      </div>
-
-      <div className="mt-12">
-      {/* <h2 className="mb-4 text-2xl font-medium tracking-tighter">Featured Video</h2> */}
-        <div className="aspect-w-16 aspect-h-9">
-          <video 
-            ref={videoRef}
-            controls 
-            className="rounded-lg w-full"
-            poster="https://via.placeholder.com/1280x720.png?text=Video+Placeholder"
-            onError={handleVideoError}
-          >
-            <source src="https://portfolior2.ameureka.com/portfilio_page_video/video_preview.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        {error && <p className="mt-2 text-red-500">{error}</p>}
       </div>
 
 
