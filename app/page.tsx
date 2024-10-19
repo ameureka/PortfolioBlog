@@ -436,7 +436,7 @@ export default function Page() {
 
       
       {/* 在页面最底部添加视频播放器 */}
-      <div className="mt-12">
+      {/* <div className="mt-12">
         <div className="aspect-w-16 aspect-h-9">
           <video 
             controls 
@@ -447,7 +447,7 @@ export default function Page() {
             Your browser does not support the video tag.
           </video>
         </div>
-      </div>
+      </div> */}
 
       {/* 在页面最底部添加视频播放器 */}
       <div className="mt-12">
@@ -457,10 +457,22 @@ export default function Page() {
             className="rounded-lg"
             poster="https://portfolior2.ameureka.com/pinpai.png"
           >
-            <source src="https://portfolior2.ameureka.com/portfilio_page_video/video_preview.mp4" type="video/mp4" />
+            <source src="https://portfolior2.ameureka.com/portfilio_page_video/brand_video20241017.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
+      </div>
+
+      <div className="prose prose-neutral dark:prose-invert">
+        {/* 这里的文字介绍个人视频创作的介绍 */}
+        <p>
+        Just like the chaotic beginning in the "Tao Te Ching" where "one gives birth to two, 
+        two gives birth to three, and three gives birth to all things," we are witnessing the 
+        origin and evolution of everything. Artificial intelligence and the diffusion models of
+        neural networks are not merely technological advancements; they symbolize the birth and 
+        growth of a new form of life.
+
+        </p>
       </div>
 
 
