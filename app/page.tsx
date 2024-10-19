@@ -423,6 +423,31 @@ export default function Page() {
       </div> */}
 
 
+
+      <div className="prose prose-neutral dark:prose-invert">
+        {/* 这里的文字介绍 */}
+        <p>
+        Here're some videos I created via  {' '}
+        <Link href="https://hailuoai.com">AI Tools</Link>{' '}
+        </p>
+      </div>
+
+      
+      {/* 在页面最底部添加视频播放器 */}
+      <div className="mt-12">
+        <div className="aspect-w-16 aspect-h-9">
+          <video 
+            controls 
+            className="rounded-lg"
+            poster="/placeholder.svg?height=720&width=1280"
+          >
+            <source src="https://ameurekaphotoblog.ameureka.com/portfilio_page_video/video_preview.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      
+
       <ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
         <li>
           <a
@@ -435,6 +460,9 @@ export default function Page() {
             <p className="ml-2 h-7">follow me</p>
           </a>
         </li>
+
+
+        
         {/* 删除follow me */}
         {/* <li>
           <a
@@ -448,20 +476,9 @@ export default function Page() {
           </a>
         </li> */}
       </ul>
-      {/* 在页面最底部添加视频播放器 */}
-      <div className="mt-12">
-        <h2 className="mb-4 text-2xl font-medium tracking-tighter">Featured Video</h2>
-        <div className="aspect-w-16 aspect-h-9">
-          <video 
-            controls 
-            className="rounded-lg"
-            poster="/placeholder.svg?height=720&width=1280"
-          >
-            <source src="https://pub-7f9c5b0b9f8d4b4e9f8d4b4e9f8d4b4e.r2.dev/sample-video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      </div>
+
+      
+
       
     </section>
   );
