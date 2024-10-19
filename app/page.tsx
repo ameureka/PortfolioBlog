@@ -314,7 +314,27 @@ export default function Page() {
         <BlogLink name="Portfolio个人博客开发实践" slug="todoportfilio" />
       </div>
 
-      
+
+      <div className="prose prose-neutral dark:prose-invert">
+        {/* 这里的文字介绍 */}
+        <p>
+        Here're some videos I created via  {' '}
+        <Link href="https://hailuoai.com">AI Tools</Link>{' '}
+        </p>
+      </div>
+
+      <div className="prose prose-neutral dark:prose-invert">
+        {/* 这里的文字介绍个人视频创作的介绍 */}
+        <p>
+        Just like the chaotic beginning in the "Tao Te Ching" where "one gives birth to two, 
+        two gives birth to three, and three gives birth to all things," we are witnessing the 
+        origin and evolution of everything. Artificial intelligence and the diffusion models of
+        neural networks are not merely technological advancements; they symbolize the birth and 
+        growth of a new form of life.
+
+        </p>
+      </div>
+
       {/* 在页面最底部添加视频播放器 */}
       <div className="mt-12">
         <div className="aspect-w-16 aspect-h-9">
@@ -329,17 +349,7 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="prose prose-neutral dark:prose-invert">
-        {/* 这里的文字介绍个人视频创作的介绍 */}
-        <p>
-        Just like the chaotic beginning in the "Tao Te Ching" where "one gives birth to two, 
-        two gives birth to three, and three gives birth to all things," we are witnessing the 
-        origin and evolution of everything. Artificial intelligence and the diffusion models of
-        neural networks are not merely technological advancements; they symbolize the birth and 
-        growth of a new form of life.
 
-        </p>
-      </div>
 
 
 
@@ -451,16 +461,6 @@ export default function Page() {
       </div> */}
 
 
-
-      <div className="prose prose-neutral dark:prose-invert">
-        {/* 这里的文字介绍 */}
-        <p>
-        Here're some videos I created via  {' '}
-        <Link href="https://hailuoai.com">AI Tools</Link>{' '}
-        </p>
-      </div>
-
-      
       {/* 在页面最底部添加视频播放器 */}
       {/* <div className="mt-12">
         <div className="aspect-w-16 aspect-h-9">
