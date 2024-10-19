@@ -441,7 +441,7 @@ export default function Page() {
             className="rounded-lg"
             poster="/placeholder.svg?height=720&width=1280"
           >
-            <source src="https://ameurekaphotoblog.ameureka.com/portfilio_page_video/video_preview.mp4" type="video/mp4" />
+            <source src="https://portfolior2.ameureka.com/portfilio_page_video/video_preview.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
