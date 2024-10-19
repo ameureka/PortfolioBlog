@@ -43,7 +43,7 @@ const nextConfig = {
 const ContentSecurityPolicy = `
     default-src 'self' vercel.live;
     script-src 'self' 'unsafe-eval' 'unsafe-inline' cdn.vercel-insights.com vercel.live va.vercel-scripts.com;
-    style-src 'self' 'unsafe-inline';
+    style-src 'self' 'unsafe-inline' https://vercel.live/fonts;
     img-src * blob: data:;
     media-src 'self' https://portfolior2.ameureka.com;
     connect-src *;
