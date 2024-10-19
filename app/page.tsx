@@ -12,6 +12,7 @@ import vercel from 'public/images/home/vercel.jpg';
 import avatar from 'app/avatar.jpg';
 import ViewCounter from 'app/blog/view-counter';
 import { PreloadResources } from 'app/preload';
+
 import {
   getLeeYouTubeSubs,
   getVercelYouTubeSubs,
@@ -447,6 +448,21 @@ export default function Page() {
           </a>
         </li> */}
       </ul>
+      {/* 在页面最底部添加视频播放器 */}
+      <div className="mt-12">
+        <h2 className="mb-4 text-2xl font-medium tracking-tighter">Featured Video</h2>
+        <div className="aspect-w-16 aspect-h-9">
+          <video 
+            controls 
+            className="rounded-lg"
+            poster="/placeholder.svg?height=720&width=1280"
+          >
+            <source src="https://pub-7f9c5b0b9f8d4b4e9f8d4b4e9f8d4b4e.r2.dev/sample-video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      
     </section>
   );
 }
