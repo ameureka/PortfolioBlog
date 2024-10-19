@@ -449,6 +449,19 @@ export default function Page() {
         </div>
       </div>
 
+      {/* 在页面最底部添加视频播放器 */}
+      <div className="mt-12">
+        <div className="aspect-w-16 aspect-h-9">
+          <video 
+            controls 
+            className="rounded-lg"
+            poster="https://portfolior2.ameureka.com/pinpai.png"
+          >
+            <source src="https://portfolior2.ameureka.com/portfilio_page_video/video_preview.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
 
 
       <ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
