@@ -142,7 +142,7 @@ export default function WorkPage() {
           </li>
 
 
-        <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
+        {/* <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
         <h2 className="font-medium text-xl mb-1 tracking-tighter">Project Introduction.</h2>
         <p className="text-neutral-600 dark:text-neutral-400 text-sm">
         Some Projects About Cloud Computing and Network Security
@@ -160,7 +160,7 @@ export default function WorkPage() {
         <img src="https://picdata.ameureka.com/projectpreview/health%20code.png" alt="Project Image" className="my-6" />
 
         <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
-        <img src="https://picdata.ameureka.com/projectpreview/data_hub.png" alt="Project Image" className="my-6" />
+        <img src="https://picdata.ameureka.com/projectpreview/data_hub.png" alt="Project Image" className="my-6" /> */}
 
       </div>
     </section>
