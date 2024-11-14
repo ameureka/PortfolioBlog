@@ -450,65 +450,6 @@ export default function Page() {
       </div>
 
 
-
-      {/* <div className="my-8 flex h-14 w-full flex-row space-x-2 overflow-x-auto">
-        {/* 电子书链接 图片部分内容 */}
-        <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
-          <a href="https://aigcbook.ameureka.com">
-            <img 
-              src="https://ameurekaphotoblog.ameureka.com/everyoneaigc.jpeg" 
-              alt="人人都会用AIGC" 
-              width="125" 
-              height="94" 
-            />
-          </a>
-
-        </div>
-
-        {/* 电子书链接002  Generative AI */}
-        <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
-          <a href="https://genaibook.ameureka.com/">
-            <img 
-              src="https://ameurekaphotoblog.ameureka.com/genarativeai.jpeg"    
-              alt="Generative AI" 
-              width="125" 
-              height="94" 
-            />
-          </a>
-        </div>
-
-      </div>
-
-      <nav className="my-8 flex h-14 w-full flex-row space-x-2 overflow-x-auto">
-        <article>
-          <a href="https://aigcbook.ameureka.com" title="人人都会用AIGC 电子书">
-            <img 
-              src="https://ameurekaphotoblog.ameureka.com/everyoneaigc.jpeg" 
-              alt="人人都会用AIGC 书籍封面" 
-              width="125" 
-              height="94" 
-            />
-          </a>
-        </article>
-      
-        <article>
-          <a href="https://genaibook.ameureka.com/" title="Generative AI 电子书">
-            <img 
-              src="https://ameurekaphotoblog.ameureka.com/genarativeai.jpeg" 
-              alt="Generative AI 书籍封面" 
-              width="125" 
-              height="94" 
-            />
-          </a>
-        </article>
-      </nav> */}
-
-      
-
-
-
-      
-
       {/* 这里的文字介绍删除*/}
       {/* <div className="prose prose-neutral dark:prose-invert">
         <p>
