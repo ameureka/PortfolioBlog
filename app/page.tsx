@@ -456,7 +456,7 @@ export default function Page() {
         <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
           <a href="https://aigcbook.ameureka.com">
             <img 
-              src="https://www.baiduu.com/aigc.png" 
+              src="https://ameurekaphotoblog.ameureka.com/everyoneaigc.jpeg" 
               alt="人人都会用AIGC" 
               width="125" 
               height="94" 
@@ -469,7 +469,7 @@ export default function Page() {
         <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
           <a href="https://genaibook.ameureka.com/">
             <img 
-              src="https://www.baiduu.com/genai.png" 
+              src="https://ameurekaphotoblog.ameureka.com/genarativeai.jpeg"    
               alt="Generative AI" 
               width="125" 
               height="94" 
