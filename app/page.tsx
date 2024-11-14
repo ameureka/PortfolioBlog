@@ -479,7 +479,29 @@ export default function Page() {
 
       </div>
 
-
+      <nav className="my-8 flex h-14 w-full flex-row space-x-2 overflow-x-auto">
+        <article>
+          <a href="https://aigcbook.ameureka.com" title="人人都会用AIGC 电子书">
+            <img 
+              src="https://www.baiduu.com/aigc.png" 
+              alt="人人都会用AIGC 书籍封面" 
+              width="125" 
+              height="94" 
+            />
+          </a>
+        </article>
+      
+        <article>
+          <a href="https://genaibook.ameureka.com/" title="Generative AI 电子书">
+            <img 
+              src="https://www.baiduu.com/genai.png" 
+              alt="Generative AI 书籍封面" 
+              width="125" 
+              height="94" 
+            />
+          </a>
+        </article>
+      </nav>
 
       
 
