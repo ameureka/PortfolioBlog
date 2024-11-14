@@ -483,7 +483,7 @@ export default function Page() {
         <article>
           <a href="https://aigcbook.ameureka.com" title="人人都会用AIGC 电子书">
             <img 
-              src="https://www.baiduu.com/aigc.png" 
+              src="https://ameurekaphotoblog.ameureka.com/everyoneaigc.jpeg" 
               alt="人人都会用AIGC 书籍封面" 
               width="125" 
               height="94" 
@@ -494,7 +494,7 @@ export default function Page() {
         <article>
           <a href="https://genaibook.ameureka.com/" title="Generative AI 电子书">
             <img 
-              src="https://www.baiduu.com/genai.png" 
+              src="https://ameurekaphotoblog.ameureka.com/genarativeai.jpeg" 
               alt="Generative AI 书籍封面" 
               width="125" 
               height="94" 
