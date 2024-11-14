@@ -451,7 +451,7 @@ export default function Page() {
 
 
 
-      <div className="my-8 flex h-14 w-full flex-row space-x-2 overflow-x-auto">
+      {/* <div className="my-8 flex h-14 w-full flex-row space-x-2 overflow-x-auto">
         {/* 电子书链接 图片部分内容 */}
         <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
           <a href="https://aigcbook.ameureka.com">
@@ -501,7 +501,7 @@ export default function Page() {
             />
           </a>
         </article>
-      </nav>
+      </nav> */}
 
       
 
