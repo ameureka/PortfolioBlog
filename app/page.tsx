@@ -279,18 +279,13 @@ export default function Page() {
 
       {/* 这里是youtube链接 */}
       <div className="my-8 flex w-full flex-col space-x-0 space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-        <ChannelLink
+        {/* <ChannelLink
           img={avatar}
           name="@ameureka"
           link="https://www.youtube.com/@seealso1884"
-        />
-        {/* 这里注释下第二个频道，暂时不要 */}
-        {/* <ChannelLink
-          img={vercel}
-          name="@vercel"
-          link="https://www.youtube.com/@vercelhq"
         /> */}
       </div>
+
 
       {/* 这里是介绍 */}
       <div className="prose prose-neutral dark:prose-invert">
