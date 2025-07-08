@@ -88,22 +88,22 @@ function ChannelLink({ img, link, name }) {
     </div>
   );
 }
-// youtube订阅获取接口信息
-async function Subs({ name }: { name: string }) {
-  noStore();
-  let subscribers;
-  if (name === '@leerob') {
-    subscribers = await getLeeYouTubeSubs();
-  } else {
-    subscribers = await getVercelYouTubeSubs();
-  }
+// // youtube订阅获取接口信息
+// async function Subs({ name }: { name: string }) {
+//   noStore();
+//   let subscribers;
+//   if (name === '@leerob') {
+//     subscribers = await getLeeYouTubeSubs();
+//   } else {
+//     subscribers = await getVercelYouTubeSubs();
+//   }
 
-  return (
-    <p className="text-neutral-600 dark:text-neutral-400">
-      {subscribers} subscribers
-    </p>
-  );
-}
+//   return (
+//     <p className="text-neutral-600 dark:text-neutral-400">
+//       {subscribers} subscribers
+//     </p>
+//   );
+// }
 
 function BlogLink({ slug, name }) {
   return (
